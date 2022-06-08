@@ -4,8 +4,7 @@
     <h1>{{this.$attrs.props.title}}</h1>
     <p>{{this.$attrs.props.count}}</p>
     <p>{{t}}</p>
-    <button @click="this.$attrs.props.fu(t)">Count - {{t}}</button>
-     <button @click="add">Count - {{t}}</button>
+    <button @click="this.$attrs.props.fu(this.$attrs.props.count)">Count - {{t}}</button>
   </div>
 </template>
 
@@ -13,6 +12,7 @@
 
 
 export default {
+  
   name:'HomePage',
   data(){
     return{

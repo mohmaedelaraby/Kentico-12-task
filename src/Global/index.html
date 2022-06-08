@@ -12,14 +12,16 @@
     
     <script>
     (function () {
-        'use strict';
-    
+        var x =0;
         window['home-page'] = {
             title: "Hi I'm Homes",
-            count:0,
-            fu:(count)=>{
-                console.log("fun");
-                return count++;
+            count:x,
+            fu:(c)=>{
+                console.log("function 1")
+                x=x+1
+                c=x
+                console.log("x :",x ,"C :",c)
+                return x;
                 
             }
         };
