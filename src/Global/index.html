@@ -11,6 +11,7 @@
     <h1>Welcome I'm Global</h1>
     
     <script>
+
     (function () {
         var x =0;
         window['home-page'] = {
@@ -18,10 +19,14 @@
             count:x,
             fu:(c)=>{
                 console.log("function 1")
-                x=x+1
+               /*  x=x+1
                 c=x
-                console.log("x :",x ,"C :",c)
-                return x;
+                console.log("x :",x ,"C :",c) */
+                console.log("X",x)
+                c=x;
+                console.log("C",c)
+                return x++;
+                
                 
             }
         };
