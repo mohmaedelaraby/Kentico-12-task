@@ -9,7 +9,7 @@
 
 
 export default {
-  name:'HomePage',
+  name:'AwayPage',
   data(){
     return{
       txt:"DSdsds",
@@ -21,13 +21,12 @@ export default {
       type: String,
       required: true
     }
-  },
- 
+  }
 };
 </script>
 
 <style lang="css" scoped>
 h1 {
-  color: red;
+  color: blue;
 }
 </style>
