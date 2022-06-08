@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <h1>Welcome</h1>
+    
+    <script>
+    (function () {
+        'use strict';
+    
+        window['home-page'] = {
+            title: "Hi I'm Homes"
+        };
+        console.log("first");
+    }());
+
+    (function () {
+        'use strict';
+    
+        window['away-page'] = {
+            title: "Hi I'm away"
+        };
+        console.log("second");
+    }());
+    </script>
+    
+    <!-- This is the 'root' of our first component -->
+
+    <home-page></home-page>
+    <away-page></away-page>
+    
+
+<script src="../../../dist/js/chunk-vendors.js"></script>
+<script src="../../../dist/js/app.js"></script>
+</body>
+</html>
