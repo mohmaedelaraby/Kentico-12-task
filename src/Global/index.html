@@ -8,14 +8,20 @@
 <body>
    
     
-    <h1>Welcome</h1>
+    <h1>Welcome I'm Global</h1>
     
     <script>
     (function () {
         'use strict';
     
         window['home-page'] = {
-            title: "Hi I'm Homes"
+            title: "Hi I'm Homes",
+            count:0,
+            fu:(count)=>{
+                console.log("fun");
+                return count++;
+                
+            }
         };
         console.log("first");
     }());
